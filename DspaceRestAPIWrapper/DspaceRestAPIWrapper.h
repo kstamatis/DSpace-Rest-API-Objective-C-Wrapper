@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DspaceRestAPIWrapper : NSObject
+#import "AFNetworking.h"
+#import "Community.h"
+#import "Collection.h"
+#import "Bitstream.h"
 
+@interface DSpaceRestAPIWrapper : NSObject
+
++ (void) getCommunitiesForBaseURL:(NSString *)baseURL onSuccess:(void (^)(NSArray *communities)) success onFailure:(void (^)(NSError *error)) failure;
++ (void) getCommunitiesForBaseURL:(NSString *)baseURL expand:(NSArray *)expand onSuccess:(void (^)(NSArray *communities)) success onFailure:(void (^)(NSError *error)) failure;
++ (void) getCommunityForBaseURL:(NSString *)baseURL communityID:(NSNumber *)communityID onSuccess:(void (^)(Community *community)) success onFailure:(void (^)(NSError *error)) failure;
++ (void) getCommunityForBaseURL:(NSString *)baseURL communityID:(NSNumber *)communityID expand:(NSArray *)expand onSuccess:(void (^)(Community *community)) success onFailure:(void (^)(NSError *error)) failure;
 @end

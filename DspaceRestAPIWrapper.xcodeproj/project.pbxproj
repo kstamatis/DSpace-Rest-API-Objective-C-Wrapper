@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4050A74B8A484A8CAFD5ED22 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C95C7DDB3C0B4C39A4D5C761 /* libPods.a */; };
 		521F1F0B18219A81002F87B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521F1F0A18219A81002F87B3 /* Foundation.framework */; };
 		521F1F1018219A81002F87B3 /* DspaceRestAPIWrapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 521F1F0F18219A81002F87B3 /* DspaceRestAPIWrapper.h */; };
 		521F1F1218219A81002F87B3 /* DspaceRestAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F1F1118219A81002F87B3 /* DspaceRestAPIWrapper.m */; };
@@ -16,6 +17,10 @@
 		521F1F1F18219A81002F87B3 /* libDspaceRestAPIWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521F1F0718219A81002F87B3 /* libDspaceRestAPIWrapper.a */; };
 		521F1F2518219A81002F87B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 521F1F2318219A81002F87B3 /* InfoPlist.strings */; };
 		521F1F2718219A81002F87B3 /* DspaceRestAPIWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F1F2618219A81002F87B3 /* DspaceRestAPIWrapperTests.m */; };
+		526CA01F1822EF1100775DAA /* Bitstream.m in Sources */ = {isa = PBXBuildFile; fileRef = 526CA01C1822EF1100775DAA /* Bitstream.m */; };
+		526CA0201822EF1100775DAA /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = 526CA01E1822EF1100775DAA /* Collection.m */; };
+		52B35B8B1821A11E00C93050 /* Community.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B35B8A1821A11E00C93050 /* Community.m */; };
+		52B35B8C1821A11E00C93050 /* Community.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B35B8A1821A11E00C93050 /* Community.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		521F1F2218219A81002F87B3 /* DspaceRestAPIWrapperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DspaceRestAPIWrapperTests-Info.plist"; sourceTree = "<group>"; };
 		521F1F2418219A81002F87B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		521F1F2618219A81002F87B3 /* DspaceRestAPIWrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DspaceRestAPIWrapperTests.m; sourceTree = "<group>"; };
+		526CA01B1822EF1100775DAA /* Bitstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bitstream.h; sourceTree = "<group>"; };
+		526CA01C1822EF1100775DAA /* Bitstream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bitstream.m; sourceTree = "<group>"; };
+		526CA01D1822EF1100775DAA /* Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collection.h; sourceTree = "<group>"; };
+		526CA01E1822EF1100775DAA /* Collection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collection.m; sourceTree = "<group>"; };
+		52B35B891821A11E00C93050 /* Community.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Community.h; sourceTree = "<group>"; };
+		52B35B8A1821A11E00C93050 /* Community.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Community.m; sourceTree = "<group>"; };
+		966B448C2AFB46629B7DC05E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C95C7DDB3C0B4C39A4D5C761 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				521F1F0B18219A81002F87B3 /* Foundation.framework in Frameworks */,
+				4050A74B8A484A8CAFD5ED22 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +99,7 @@
 				521F1F2018219A81002F87B3 /* DspaceRestAPIWrapperTests */,
 				521F1F0918219A81002F87B3 /* Frameworks */,
 				521F1F0818219A81002F87B3 /* Products */,
+				966B448C2AFB46629B7DC05E /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +118,7 @@
 				521F1F0A18219A81002F87B3 /* Foundation.framework */,
 				521F1F1818219A81002F87B3 /* XCTest.framework */,
 				521F1F1B18219A81002F87B3 /* UIKit.framework */,
+				C95C7DDB3C0B4C39A4D5C761 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,6 +126,7 @@
 		521F1F0C18219A81002F87B3 /* DspaceRestAPIWrapper */ = {
 			isa = PBXGroup;
 			children = (
+				52B35B881821A0E200C93050 /* domain */,
 				521F1F0F18219A81002F87B3 /* DspaceRestAPIWrapper.h */,
 				521F1F1118219A81002F87B3 /* DspaceRestAPIWrapper.m */,
 				521F1F0D18219A81002F87B3 /* Supporting Files */,
@@ -143,6 +160,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		52B35B881821A0E200C93050 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				52B35B891821A11E00C93050 /* Community.h */,
+				52B35B8A1821A11E00C93050 /* Community.m */,
+				526CA01B1822EF1100775DAA /* Bitstream.h */,
+				526CA01C1822EF1100775DAA /* Bitstream.m */,
+				526CA01D1822EF1100775DAA /* Collection.h */,
+				526CA01E1822EF1100775DAA /* Collection.m */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 521F1F2A18219A81002F87B3 /* Build configuration list for PBXNativeTarget "DspaceRestAPIWrapper" */;
 			buildPhases = (
+				6099E2570F254725801C1A19 /* Check Pods Manifest.lock */,
 				521F1F0318219A81002F87B3 /* Sources */,
 				521F1F0418219A81002F87B3 /* Frameworks */,
 				521F1F0518219A81002F87B3 /* CopyFiles */,
+				14F8165FA7664F40AA4DC085 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,12 +251,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14F8165FA7664F40AA4DC085 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6099E2570F254725801C1A19 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		521F1F0318219A81002F87B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526CA01F1822EF1100775DAA /* Bitstream.m in Sources */,
 				521F1F1218219A81002F87B3 /* DspaceRestAPIWrapper.m in Sources */,
+				52B35B8B1821A11E00C93050 /* Community.m in Sources */,
+				526CA0201822EF1100775DAA /* Collection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				521F1F2718219A81002F87B3 /* DspaceRestAPIWrapperTests.m in Sources */,
+				52B35B8C1821A11E00C93050 /* Community.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +399,7 @@
 		};
 		521F1F2B18219A81002F87B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 966B448C2AFB46629B7DC05E /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/DspaceRestAPIWrapper.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -342,6 +412,7 @@
 		};
 		521F1F2C18219A81002F87B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 966B448C2AFB46629B7DC05E /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/DspaceRestAPIWrapper.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -409,6 +480,7 @@
 				521F1F2C18219A81002F87B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		521F1F2D18219A81002F87B3 /* Build configuration list for PBXNativeTarget "DspaceRestAPIWrapperTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +489,7 @@
 				521F1F2F18219A81002F87B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

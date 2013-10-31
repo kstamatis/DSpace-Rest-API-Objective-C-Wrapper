@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>823C548E-A865-4BF8-AAB1-A7394FB36A1F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DspaceRestAPIWrapper</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>052A162B-EED2-449D-856D-36A08E547DD2</key>
+		<string>https://bitbucket.org/kstamatis/dspace-rest-api-objective-c-wrapper.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DspaceRestAPIWrapper.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>052A162B-EED2-449D-856D-36A08E547DD2</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/kstamatis/dspace-rest-api-objective-c-wrapper.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>052A162B-EED2-449D-856D-36A08E547DD2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>052A162B-EED2-449D-856D-36A08E547DD2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>dspace-rest-api-objective-c-wrapper</string>
+		</dict>
+	</array>
+</dict>
+</plist>
