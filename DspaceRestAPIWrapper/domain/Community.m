@@ -12,18 +12,12 @@
 
 #pragma mark - Init Methods
 - (id) initWithDictionary:(NSDictionary *)jsonDictionary{
-    if (self = [super init]){
+    if (self = [super initWithDictionary:jsonDictionary]){
         self.copyrightText = jsonDictionary[@"copyrightText"];
         self.introductoryText = jsonDictionary[@"introductoryText"];
         self.shortDescription = jsonDictionary[@"shortDescription"];
         self.sidebarText = jsonDictionary[@"sidebarText"];
         self.countItems = jsonDictionary[@"countItems"];
-        self.handle = jsonDictionary[@"handle"];
-        self.dspaceID = jsonDictionary[@"id"];
-        self.link = jsonDictionary[@"link"];
-        self.name = jsonDictionary[@"name"];
-        
-        self.expand = jsonDictionary[@"expand"];
         
         if (![self.expand containsObject:COMMUNITY_EXPAND_LOGO]){
             self.logo = [[Bitstream alloc] initWithDictionary:jsonDictionary[@"logo"]];
@@ -40,17 +34,21 @@
         }
         
         if (![self.expand containsObject:COMMUNITY_EXPAND_PARENT_COMMUNITY]){
-            self.parentCommunity = [[Community alloc] initWithDictionary:jsonDictionary[@"parentCommunity"]];
+            if (jsonDictionary[@"parentCommunity"] != [NSNull null]){
+                self.parentCommunity = [[Community alloc] initWithDictionary:jsonDictionary[@"parentCommunity"]];
+            }
         }
         
         if (![self.expand containsObject:COMMUNITY_EXPAND_SUBCOMMUNITIES]){
-            NSArray *restSubcommunities = jsonDictionary[@"subCommunities"];
-            NSMutableArray *coms = [[NSMutableArray alloc] init];
-            for (NSDictionary *restCommunity in restSubcommunities){
-                Community *collection = [[Community alloc] initWithDictionary:restCommunity];
-                [coms addObject:collection];
+            if (jsonDictionary[@"subCommunities"] != [NSNull null]){
+                NSArray *restSubcommunities = jsonDictionary[@"subCommunities"];
+                NSMutableArray *coms = [[NSMutableArray alloc] init];
+                for (NSDictionary *restCommunity in restSubcommunities){
+                    Community *collection = [[Community alloc] initWithDictionary:restCommunity];
+                    [coms addObject:collection];
+                }
+                self.subCommunities = [NSArray arrayWithArray:coms];
             }
-            self.subCommunities = [NSArray arrayWithArray:coms];
         }
     }
     

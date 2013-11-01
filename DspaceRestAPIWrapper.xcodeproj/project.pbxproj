@@ -19,6 +19,7 @@
 		521F1F2718219A81002F87B3 /* DspaceRestAPIWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 521F1F2618219A81002F87B3 /* DspaceRestAPIWrapperTests.m */; };
 		526CA01F1822EF1100775DAA /* Bitstream.m in Sources */ = {isa = PBXBuildFile; fileRef = 526CA01C1822EF1100775DAA /* Bitstream.m */; };
 		526CA0201822EF1100775DAA /* Collection.m in Sources */ = {isa = PBXBuildFile; fileRef = 526CA01E1822EF1100775DAA /* Collection.m */; };
+		526CA029182461DD00775DAA /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 526CA028182461DD00775DAA /* Item.m */; };
 		52B35B8B1821A11E00C93050 /* Community.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B35B8A1821A11E00C93050 /* Community.m */; };
 		52B35B8C1821A11E00C93050 /* Community.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B35B8A1821A11E00C93050 /* Community.m */; };
 /* End PBXBuildFile section */
@@ -62,6 +63,8 @@
 		526CA01C1822EF1100775DAA /* Bitstream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bitstream.m; sourceTree = "<group>"; };
 		526CA01D1822EF1100775DAA /* Collection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collection.h; sourceTree = "<group>"; };
 		526CA01E1822EF1100775DAA /* Collection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collection.m; sourceTree = "<group>"; };
+		526CA027182461DD00775DAA /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		526CA028182461DD00775DAA /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		52B35B891821A11E00C93050 /* Community.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Community.h; sourceTree = "<group>"; };
 		52B35B8A1821A11E00C93050 /* Community.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Community.m; sourceTree = "<group>"; };
 		966B448C2AFB46629B7DC05E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 				526CA01C1822EF1100775DAA /* Bitstream.m */,
 				526CA01D1822EF1100775DAA /* Collection.h */,
 				526CA01E1822EF1100775DAA /* Collection.m */,
+				526CA027182461DD00775DAA /* Item.h */,
+				526CA028182461DD00775DAA /* Item.m */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -289,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526CA029182461DD00775DAA /* Item.m in Sources */,
 				526CA01F1822EF1100775DAA /* Bitstream.m in Sources */,
 				521F1F1218219A81002F87B3 /* DspaceRestAPIWrapper.m in Sources */,
 				52B35B8B1821A11E00C93050 /* Community.m in Sources */,
