@@ -40,8 +40,8 @@
         }
         
         if (![self.expand containsObject:COMMUNITY_EXPAND_SUBCOMMUNITIES]){
-            if (jsonDictionary[@"subCommunities"] != [NSNull null]){
-                NSArray *restSubcommunities = jsonDictionary[@"subCommunities"];
+            if (jsonDictionary[@"subcommunities"] != [NSNull null]){
+                NSArray *restSubcommunities = jsonDictionary[@"subcommunities"];
                 NSMutableArray *coms = [[NSMutableArray alloc] init];
                 for (NSDictionary *restCommunity in restSubcommunities){
                     Community *collection = [[Community alloc] initWithDictionary:restCommunity];
