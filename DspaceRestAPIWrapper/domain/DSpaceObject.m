@@ -13,12 +13,14 @@
 #pragma mark - Init Methods
 - (id) initWithDictionary:(NSDictionary *)jsonDictionary{
     if (self = [super init]){
-        self.dspaceID = jsonDictionary[@"id"];
-        self.name = jsonDictionary[@"name"];
-        self.handle = jsonDictionary[@"handle"];
-        self.type = jsonDictionary[@"type"];
-        self.link = jsonDictionary[@"link"];
-        self.expand = jsonDictionary[@"expand"];
+        if (jsonDictionary){
+            self.dspaceID = jsonDictionary[@"id"];
+            self.name = jsonDictionary[@"name"];
+            self.handle = jsonDictionary[@"handle"];
+            self.type = jsonDictionary[@"type"];
+            self.link = jsonDictionary[@"link"];
+            self.expand = jsonDictionary[@"expand"];
+        }
     }
     return self;
 }

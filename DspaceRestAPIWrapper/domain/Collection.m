@@ -25,11 +25,15 @@
         self.numberItems = jsonDictionary[@"numberItems"];
         
         if (![self.expand containsObject:COLLECTION_EXPAND_LOGO]){
-            self.logo = [[Bitstream alloc] initWithDictionary:jsonDictionary[@"logo"]];
+            if (jsonDictionary[@"logo"] != [NSNull null]){
+                self.logo = [[Bitstream alloc] initWithDictionary:jsonDictionary[@"logo"]];
+            }
         }
         
         if (![self.expand containsObject:COLLECTION_EXPAND_LICENCE]){
-            self.licence = jsonDictionary[@"licence"];
+            if (jsonDictionary[@"licence"] != [NSNull null]){
+                self.licence = jsonDictionary[@"licence"];
+            }
         }
         
         if (![self.expand containsObject:COLLECTION_EXPAND_PARENT_COMMUNITY_LIST]){
